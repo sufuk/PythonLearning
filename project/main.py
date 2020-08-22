@@ -5,7 +5,7 @@ import time
 import winsound
 import smtplib
 import telegram
-my_token = ''
+my_token = '1262737952:AAE7MYgqJceANaIHFd4E6EnSDREHAW3ueFo'
 
 def send(msg, chat_id, token=my_token):
 	bot = telegram.Bot(token=token)
@@ -36,10 +36,10 @@ while i == 1:
     otherhash = imagehash.average_hash(Image.open('temp\shoot2_crop.png'))
     a = hash - otherhash
     hash2 = imagehash.average_hash(Image.open('temp\shoot1_crop.png'))
-    otherhash2 = imagehash.average_hash(Image.open(r'temp\abs.png'))
+    otherhash2 = imagehash.average_hash(Image.open(r'temp\ref.png'))
     b = hash2 - otherhash2
     hash3 = imagehash.average_hash(Image.open('temp\shoot2_crop.png'))
-    otherhash3 = imagehash.average_hash(Image.open(r'temp\abs.png'))
+    otherhash3 = imagehash.average_hash(Image.open(r'temp\ref.png'))
     c = hash3 - otherhash3
     j = 0
     if a != 0:
@@ -50,4 +50,4 @@ while i == 1:
         j = 1
     if j == 1:
         message ="cigdem online"
-        send(message, , token=my_token)
+        send(message, 955227816, token=my_token)
