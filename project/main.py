@@ -5,7 +5,7 @@ import time
 import winsound
 import smtplib
 import telegram
-my_token = '1262737952:AAE7MYgqJceANaIHFd4E6EnSDREHAW3ueFo'
+my_token = ''
 
 def send(msg, chat_id, token=my_token):
 	bot = telegram.Bot(token=token)
@@ -50,4 +50,4 @@ while i == 1:
         j = 1
     if j == 1:
         message ="cigdem online"
-        send(message, 955227816, token=my_token)
+        send(message, , token=my_token)
